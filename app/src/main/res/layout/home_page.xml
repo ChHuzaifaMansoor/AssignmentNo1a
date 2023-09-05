@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/background"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layoutradius">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/layoutradius"
+                        android:src="@drawable/person" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Welcome To Store"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"/>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/layoutradius">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/message"
+                        android:background="@drawable/layoutradius"/>
+
+
+                </LinearLayout>
+
+                
+            </LinearLayout>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Over_Panal"
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:background="@drawable/overlappin_panal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topPanel"
+        app:layout_constraintVertical_bias="0.199">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/drop">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Iteam Prices"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="100dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Today"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/drope_ero"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/drop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/iteams"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dumbblees"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#EDE275"
+                    android:margin="5dp"
+                    android:gravity="center"
+                    android:text="Doumble"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/plates"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#EDE275"
+                    android:margin="5dp"
+                    android:gravity="center"
+                    android:text="Plates"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/machine"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#EDE275"
+                    android:margin="5dp"
+                    android:gravity="center"
+                    android:text="Machine"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bars"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#EDE275"
+                    android:margin="5dp"
+                    android:gravity="center"
+                    android:text="Bars"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/supliments"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#EDE275"
+                    android:margin="5dp"
+                    android:gravity="center"
+                    android:text="Supliment"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/iteams"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/lke"
+                android:text="Like"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/comment"
+                android:text="Comment"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/share"
+                android:text="Share"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/Over_Panal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="346dp"
+        android:orientation="horizontal"
+        android:background="#E91E63">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/dumbblees"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="#EDE275"
+                    android:margin="5dp"
+                    android:gravity="center"
+                    android:text="Doumble"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/plates"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="#EDE275"
+                    android:margin="5dp"
+                    android:gravity="center"
+                    android:text="Plates"/>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/machine"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="#EDE275"
+                    android:margin="5dp"
+                    android:gravity="center"
+                    android:text="Machines"/>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/supliments"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="#EDE275"
+                    android:margin="5dp"
+                    android:gravity="center"
+                    android:text="Supliments"/>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
